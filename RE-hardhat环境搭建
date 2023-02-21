@@ -1,0 +1,67 @@
+#
+### 当前的环境版本
+|  组件   |   版本   |
+| :-----: | :------: |
+|  node   | v14.15.0 |
+|   npm   |  6.14.8  |
+| hardhat | v2.12.7  |
+-------------------------------
+| Truffle |  v5.1.X  |
+| web3.js |  v1.2.9  |
+|  yarn   | v1.22.x  |
+
+### 
+windows下要使用powershell（git自带的shell是不可以的）
+```
+mkdir hardhat-tutorial 
+cd hardhat-tutorial 
+npm init --yes 
+npm install --save-dev hardhat 
+```
+npx hardhat
+使用键盘选择"创建一个新的hardhat.config.js（Create an empty hardhat.config.js）" ，然后回车。
+
+### hardhat操作命令
+  
+  通用命令是：npx hardhat + 全局选项+task +task选项
+  ```
+  npx hardhat
+Hardhat version 2.0.0
+
+Usage: hardhat [GLOBAL OPTIONS] <TASK> [TASK OPTIONS]
+
+GLOBAL OPTIONS:
+
+  --config              A Hardhat config file.
+  --emoji               Use emoji in messages.
+  --help                Shows this message, or a task's help if its name is provided
+  --max-memory          The maximum amount of memory that Hardhat can use.
+  --network             The network to connect to.
+  --show-stack-traces   Show stack traces.
+  --tsconfig            Reserved hardhat argument -- Has no effect.
+  --verbose             Enables Hardhat verbose logging
+  --version             Shows hardhat's version.
+
+
+AVAILABLE TASKS:
+
+  check         Check whatever you need
+  clean         Clears the cache and deletes all artifacts
+  compile       Compiles the entire project, building all artifacts
+  console       Opens a hardhat console
+  flatten       Flattens and prints contracts and their dependencies
+  help          Prints this message
+  node          Starts a JSON-RPC server on top of Hardhat Network
+  run           Runs a user-defined script after compiling the project
+  test          Runs mocha tests
+
+To get help for a specific task run: npx hardhat help [task]
+-----------------------------------
+  ```
+常用的操作命令
+  ```
+  npx hardhat compile					//编译默认的hardhat.config.ts配置下的合约文档
+  npx hardhat --config  configFile compile					//编译configFile配置下的合约文档
+  npx hardhat test test/SushiswapBank.test.ts					//测试 test/SushiswapBank.test.ts	脚本
+-----------------------------------
+```
