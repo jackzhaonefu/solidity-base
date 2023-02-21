@@ -73,3 +73,10 @@ npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffl
 将高亮行require("@nomiclabs/hardhat-waffle"); 添加到你的hardhat.config.js中
 这里引入hardhat-waffle，因为它依赖于hardhat-ethers，因此不需要同时添加两个
 ```
+
+## 编写合约
+
+### 编译合约
+```
+npx hardhat compile
+```
