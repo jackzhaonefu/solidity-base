@@ -1,0 +1,23 @@
+{
+  "name": "solidity-base",
+  "version": "1.0.0",
+  "description": "solidity环境搭建、语言基础、学习笔记",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackzhaonefu/solidity-base.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackzhaonefu/solidity-base/issues"
+  },
+  "homepage": "https://github.com/jackzhaonefu/solidity-base#readme",
+  "devDependencies": {
+    "hardhat": "^2.12.7"
+  }
+}
