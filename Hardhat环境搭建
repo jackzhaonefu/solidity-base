@@ -1,4 +1,5 @@
-#
+# 本教程参考官方文档 https://learnblockchain.cn/docs/hardhat/tutorial/
+
 ### 当前的环境版本
 |  组件   |   版本   |
 | :-----: | :------: |
@@ -64,4 +65,11 @@ To get help for a specific task run: npx hardhat help [task]
   npx hardhat --config  configFile compile					//编译configFile配置下的合约文档
   npx hardhat test test/SushiswapBank.test.ts					//测试 test/SushiswapBank.test.ts	脚本
 -----------------------------------
+```
+### 插件
+```
+我们将使用Ethers.js和Waffle插件。 通过他们与以太坊进行交互并测试合约
+npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+将高亮行require("@nomiclabs/hardhat-waffle"); 添加到你的hardhat.config.js中
+这里引入hardhat-waffle，因为它依赖于hardhat-ethers，因此不需要同时添加两个
 ```
